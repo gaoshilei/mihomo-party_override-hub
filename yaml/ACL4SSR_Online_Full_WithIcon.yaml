@@ -36,7 +36,7 @@ proxy-groups:
       - 韩国节点
       - 手动切换
       - DIRECT
-  - name: OpenAi
+  - name: AIGC
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
     proxies:
@@ -294,7 +294,7 @@ proxy-groups:
       - 手动切换
       - 自动选择
       - 电报消息
-      - OpenAi
+      - AIGC
       - 油管视频
       - 奈飞视频
       - 巴哈姆特
@@ -419,9 +419,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  OpenAi:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/OpenAi.list
-    path: ./ruleset/OpenAi.list
+  AIGC:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/ai.list
+    path: ./ruleset/AIGC.list
     behavior: classical
     interval: 86400
     format: text
@@ -561,7 +561,7 @@ rules:
   - "RULE-SET,Microsoft,微软服务"
   - "RULE-SET,Apple,苹果服务"
   - "RULE-SET,Telegram,电报消息"
-  - "RULE-SET,OpenAi,OpenAi"
+  - "RULE-SET,AIGC,AIGC"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
   - "RULE-SET,Origin,游戏平台"
