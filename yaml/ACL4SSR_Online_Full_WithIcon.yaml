@@ -321,6 +321,20 @@ proxy-groups:
       - 奈飞节点
 
 rule-providers:
+  CustomDirect:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/direct.list
+    path: ./ruleset/CustomDirect.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  CustomProxy:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/proxy.list
+    path: ./ruleset/CustomProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
@@ -533,6 +547,7 @@ rule-providers:
     type: http
 
 rules:
+  - "RULE-SET,Custom,自定义规则"
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"

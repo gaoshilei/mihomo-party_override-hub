@@ -1,7 +1,0 @@
-rules:
-  - DOMAIN-KEYWORD,aicodemirror,DIRECT
-  - DOMAIN-KEYWORD,amap,DIRECT
-  - DOMAIN-KEYWORD,umeng,Proxy
-  - DOMAIN-KEYWORD,jpush,DIRECT
-  - DOMAIN-KEYWORD,hellobike,DIRECT
-  - DOMAIN-KEYWORD,hbmar,DIRECT
