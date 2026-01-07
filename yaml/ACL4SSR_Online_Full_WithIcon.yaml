@@ -321,16 +321,16 @@ proxy-groups:
       - 奈飞节点
 
 rule-providers:
-  CustomDirect:
-    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/direct.list
-    path: ./ruleset/CustomDirect.list
+  CustomProxy:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/proxy.list
+    path: ./ruleset/CustomProxy.list
     behavior: classical
     interval: 86400
     format: text
     type: http
-  CustomProxy:
-    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/proxy.list
-    path: ./ruleset/CustomProxy.list
+  CustomDirect:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/direct.list
+    path: ./ruleset/CustomDirect.list
     behavior: classical
     interval: 86400
     format: text
