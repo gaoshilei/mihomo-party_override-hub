@@ -547,7 +547,7 @@ rule-providers:
     type: http
 
 rules:
-  - "RULE-SET,CustomProxy,节点选择"
+  - "RULE-SET,CustomProxy,手动切换"
   - "RULE-SET,CustomDirect,全球直连"
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
