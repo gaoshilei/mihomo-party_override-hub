@@ -328,6 +328,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  CustomSuperProxy:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/super_proxy.list
+    path: ./ruleset/CustomSuperProxy.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   CustomDirect:
     url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/direct.list
     path: ./ruleset/CustomDirect.list
@@ -547,7 +554,8 @@ rule-providers:
     type: http
 
 rules:
-  - "RULE-SET,CustomProxy,手动切换"
+  - "RULE-SET,CustomSuperProxy,手动切换"
+  - "RULE-SET,CustomProxy,自动选择"
   - "RULE-SET,CustomDirect,全球直连"
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
