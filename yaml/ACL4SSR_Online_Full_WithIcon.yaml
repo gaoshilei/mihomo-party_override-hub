@@ -19,7 +19,6 @@ proxy-groups:
     type: select
   - name: 自动选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
-    url: "https://cp.cloudflare.com/generate_204"
     type: url-test
     include-all: true
     interval: 180
@@ -290,7 +289,6 @@ proxy-groups:
   - name: "高可用主备"
     type: fallback
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
-    url: "https://cp.cloudflare.com/generate_204"
     interval: 60
     tolerance: 50
     proxies:
