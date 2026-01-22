@@ -335,6 +335,13 @@ proxy-groups:
       - 奈飞节点
 
 rule-providers:
+  CustomManual:
+    url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/manual.list
+    path: ./ruleset/CustomManual.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   CustomProxy:
     url: https://raw.githubusercontent.com/gaoshilei/mihomo-party_override-hub/refs/heads/main/rules/proxy.list
     path: ./ruleset/CustomProxy.list
@@ -570,6 +577,7 @@ rule-providers:
 rules:
   - "RULE-SET,CustomSuperProxy,手动切换"
   - "RULE-SET,CustomProxy,自动选择"
+  - "RULE-SET,CustomManual,国外媒体"
   - "RULE-SET,CustomDirect,全球直连"
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
